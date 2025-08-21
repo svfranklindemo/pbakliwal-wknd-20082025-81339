@@ -211,10 +211,7 @@ header {
   height: var(--nav-height);
 }
 
-/* Need to adjust main because of positioning of the fixed header */
-main {
-  margin-top: 105px;
-} 
+
 
 @media (width < 768px) {
   main {
