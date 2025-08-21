@@ -8,19 +8,7 @@ body>header {
     height: unset;
 }
 
-body {
-    /*&.modern-nav>main {
-        margin-top: 0;
-    }*/
 
-    &:not(.modern-nav)>main {
-        margin-top: 60px;
-
-        &:not(.blog) {
-            margin-top: 130px;
-        }
-    }
-}
 * {
     box-sizing: border-box;
   }
