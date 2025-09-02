@@ -18,8 +18,8 @@
  :root,
  .dropin-design.dropin-design {
   /* Font Family  */ 
-  --heading-font-family: 'Oxygen', sans-serif;
-  --type-base-font-family: 'Oxygen', sans-serif;
+  --heading-font-family: "freight-sans-pro", sans-serif;
+  --type-base-font-family: "freight-sans-pro", sans-serif;
 
   /* body sizes */
   --body-font-size-xxs: 10px;
@@ -176,7 +176,7 @@
 }
 
 @font-face {
-  font-family: 'Source-Serif-Pro-Fallback';
+  font-family: "freight-sans-pro", sans-serif;
   src: local('Arial');
   size-adjust: 107%;
   ascent-override: normal;
@@ -481,7 +481,7 @@ main .section {
 
 @media (width >=1024px) {
   .section > div {
-    max-width: 1200px;
+    max-width: unset;
     margin: auto;
   }
 }

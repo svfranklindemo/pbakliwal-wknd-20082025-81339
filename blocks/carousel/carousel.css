@@ -54,14 +54,14 @@
 }
 
 .carousel .carousel-slide .carousel-slide-content {
-  width: 35%;
+  width: 50%;
   z-index: 1;
   padding: 2.5rem;
   color: white;
-  background-color: var(--color-neutral-200);
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 @media (width <= 768px) {
@@ -76,13 +76,7 @@
   object-fit: cover;
 }
 
-.carousel .carousel-slide .carousel-slide-content h2 {
-  font-size: var(--heading-font-size-s);
-  font-family: var(--heading-font-family);
-  color: var(--color-black-200);
-  line-height: normal;
-  margin: 0;
-}
+
 
 .carousel .carousel-slide .carousel-slide-content p {
   margin: 1rem 0;
@@ -97,13 +91,7 @@
   margin-top: 3rem;
 }
 
-.carousel .carousel-slide .carousel-slide-content h2::after {
-  border-bottom: 2px solid var(--color-brand-500);
-  content: "";
-  display: block;
-  padding-top: 8px;
-  width: 90px;
-}
+
 
 .carousel .carousel-slide-indicators {
   display: flex;
@@ -198,4 +186,227 @@
   .carousel .carousel-slide .carousel-slide-content[data-align="justify"] {
     --slide-content-width: auto;
   }
+}
+
+/* Hero Carousel Styles */
+.hero-carousel.carousel-container {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-wrapper {
+  height: 100%;
+}
+
+.hero-carousel .carousel {
+  height: 100%;
+}
+
+.hero-carousel .carousel-slides-container {
+  height: 100%;
+}
+
+.hero-carousel .carousel-slides {
+  height: 100%;
+  min-height: unset;
+}
+
+.hero-carousel .carousel-slide {
+  height: 100%;
+  position: relative;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0d1428 100%);
+}
+
+.hero-carousel .carousel-slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-carousel .carousel-slide-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.8) 0%, rgba(26, 31, 58, 0.6) 50%, rgba(13, 20, 40, 0.8) 100%);
+  z-index: 2;
+}
+
+.hero-carousel .carousel-slide-image picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-carousel .carousel-slide-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 60%;
+  max-width: 800px;
+  z-index: 3;
+  padding: 0;
+  background: none;
+  color: white;
+  text-align: left;
+}
+
+@media (width <= 768px) {
+  .hero-carousel .carousel-slide-content {
+    left: 5%;
+    width: 90%;
+    max-width: none;
+    text-align: center;
+  }
+}
+
+.hero-carousel .carousel-slide-content h1,
+.hero-carousel .carousel-slide-content h2 {
+  font-size: 72px;
+  font-weight: 500;
+  font-family: "freight-sans-pro", sans-serif;
+  color: white;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (width <= 768px) {
+  .hero-carousel .carousel-slide-content h1,
+  .hero-carousel .carousel-slide-content h2 {
+    font-size: 48px;
+  }
+}
+
+.hero-carousel .carousel-slide-content h1::after,
+.hero-carousel .carousel-slide-content h2::after {
+  display: none;
+}
+
+.hero-carousel .carousel-slide-content p {
+  margin: 0;
+  color: white;
+}
+
+.hero-carousel .carousel-slide-content p:first-of-type {
+  margin: 0;
+}
+
+.hero-carousel .button-container {
+  margin-top: 2rem;
+}
+
+.hero-carousel .button-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-carousel .button-primary::after {
+  content: '→';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.hero-carousel .button-primary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero-carousel .button-primary:hover::after {
+  transform: translateX(4px);
+}
+
+/* Hero Carousel Indicators */
+.hero-carousel .carousel-slide-indicators {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  gap: 1rem;
+}
+
+.hero-carousel .carousel-slide-indicator button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hero-carousel .carousel-slide-indicator button:disabled,
+.hero-carousel .carousel-slide-indicator button:hover,
+.hero-carousel .carousel-slide-indicator button:focus-visible {
+  background-color: white;
+  border-color: white;
+  transform: scale(1.2);
+}
+
+/* Hero Carousel Navigation */
+.hero-carousel .carousel-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+  right: 2rem;
+  z-index: 4;
+}
+
+.hero-carousel .carousel-navigation-buttons button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.hero-carousel .carousel-navigation-buttons button:hover,
+.hero-carousel .carousel-navigation-buttons button:focus-visible {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  transform: scale(1.1);
+}
+
+/* Ensure hero carousel overlaps navbar */
+.hero-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a subtle glow effect to the hero content */
+.hero-carousel .carousel-slide-content::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
 }
