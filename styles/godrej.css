@@ -18,7 +18,7 @@ body>header {
         top: 0;
         padding: 1.35em 0;
 
-        background: linear-gradient(to bottom, white, rgba(255, 255, 255, .92));
+        background: transparent;
 
         .nav-brand .icon {
             filter: contrast(100);
@@ -36,6 +36,7 @@ body>header {
     .section.nav-brand {
         /* correct the logo alignment */
         padding: 10px 10px 0;
+        margin-left: 140px;
     }
 
     & nav {
@@ -52,7 +53,7 @@ body>header {
 
         .nav-sections ul {
             gap: unset;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
         }
 

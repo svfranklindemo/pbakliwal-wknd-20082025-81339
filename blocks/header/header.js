@@ -104,12 +104,15 @@ function addAnimation() {
 
     if (viewportWidth > 900) {
       if (scrollPosition > 168) {
-        header.classList.add('minimized');
+        header.style.transform = 'translateY(-100%)';
+        header.style.transition = 'transform 0.3s ease';
       } else {
-        header.classList.remove('minimized');
+        header.style.transform = 'translateY(0)';
+        header.style.transition = 'transform 0.3s ease';
       }
     } else {
-      header.classList.remove('minimized');
+      header.style.transform = 'translateY(0)';
+      header.style.transition = 'transform 0.3s ease';
     }
   });
 }
