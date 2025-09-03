@@ -1426,6 +1426,7 @@ main .section.section-title .default-content-wrapper:first-of-type p::after {
   color: #333;
   display: grid;  
   grid-template-columns: 30% 70%;
+  align-items: self-start;
 }
 
 .case-study-col h2 {
@@ -1462,6 +1463,7 @@ main .section.section-title .default-content-wrapper:first-of-type p::after {
   line-height: 1.6;
   color: #333;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .case-study-col .default-content-wrapper {
