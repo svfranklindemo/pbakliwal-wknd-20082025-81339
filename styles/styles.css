@@ -470,7 +470,9 @@ main img {
 
 /* sections */
 main .section {
-  padding: 2rem 15px
+  padding: 0rem 15px;
+  
+  
 }
 
 @media (width <= 768px) {

@@ -80,7 +80,6 @@ main .form-container {
     background-color: var(--form-background-color);
     padding: var(--form-padding);
     width: var(--form-width);
-    margin: var(--nav-height) auto;
 }
 
 main .form {
@@ -568,7 +567,6 @@ main form .wizard > .current-wizard-step.panel-wrapper:last-of-type ~ .wizard-bu
   color: white;
   padding: 4rem 2rem;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
