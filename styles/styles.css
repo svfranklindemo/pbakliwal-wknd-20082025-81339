@@ -1184,3 +1184,86 @@ main .section.section-title .default-content-wrapper:first-of-type p::after {
     max-width: none;
   }
 }
+
+/* Infogain Column 2 Styles */
+.infogain-col-2 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.infogain-col-2 .columns-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  text-align: left;
+}
+
+.infogain-col-2 .card-block {
+  color: white;
+}
+
+.infogain-col-2 h3 {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.infogain-col-2 p {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.3em;
+  color: white;
+  margin-bottom: 3rem;
+  line-height: 1.7em;
+}
+
+.infogain-col-2 .button-container {
+  margin-top: 2rem;
+}
+
+.infogain-col-2 .button {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.infogain-col-2 .button:hover {
+  background: white;
+  color: #1a1a1a;
+}
+
+.infogain-col-2 .button::after {
+  content: '→';
+  margin-left: 8px;
+  font-size: 1rem;
+}
+
+/* Responsive Design for Infogain Column 2 */
+@media (max-width: 768px) {
+  .infogain-col-2 {
+    padding: 3rem 1rem;
+  }
+  
+  .infogain-col-2 h3 {
+    font-size: 2.5rem;
+  }
+  
+  .infogain-col-2 p {
+    font-size: 1.1rem;
+  }
+}
