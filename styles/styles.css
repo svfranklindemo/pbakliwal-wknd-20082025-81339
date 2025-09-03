@@ -695,3 +695,225 @@ main .section.section-title .default-content-wrapper:first-of-type p::after {
 .dropin-design .dropin-cart-item__sku {
   display: none;
 }
+
+/* Teal Background Image */
+.teal-bg-image {
+  background-image: radial-gradient(circle at 114% 107%, #002942, #005962 95%, #004950 136%);
+  color: white;
+}
+
+/* Background Image 1 */
+.bg-image-1 {
+  background-image: url('/icons/imgi_36_home-4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Infogain Column 1 Styles */
+.infogain-col-1.columns-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.infogain-col-1 .columns-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.infogain-col-1 .columns-2-cols {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Column Styles */
+.infogain-col-1 .card-block:first-child > div:first-child {
+  color: white;
+}
+
+.infogain-col-1 h3 {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.infogain-col-1 .card-block:first-child > div:first-child p {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.infogain-col-1 .card-block:first-child > div:first-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infogain-col-1 .card-block:first-child > div:first-child li {
+  position: relative;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.infogain-col-1 .card-block:first-child > div:first-child li::before {
+  content: '◆';
+  color: white;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+}
+
+.infogain-col-1 .card-block:first-child > div:first-child li a {
+  color: white;
+  text-decoration: none;
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.infogain-col-1 .card-block:first-child > div:first-child li a:hover {
+  opacity: 0.8;
+}
+
+/* Image Column Styles */
+.infogain-col-1 .columns-img-col {
+  position: relative;
+}
+
+.infogain-col-1 .columns-img-col picture {
+  display: block;
+  margin-bottom: 0;
+}
+
+.infogain-col-1 .columns-img-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right Column Card Styles */
+.infogain-col-1 .card-block:last-child {
+  position: relative;
+}
+
+.infogain-col-1 .card-block:last-child > div {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  margin: 0;
+}
+
+.infogain-col-1 .card-block:last-child h3 {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.infogain-col-1 .card-block:last-child p {
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.infogain-col-1 .card-block:last-child p strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Button Styles */
+.infogain-col-1 .button-container {
+  margin-top: 1.5rem;
+}
+
+.infogain-col-1 .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2.05em;
+  color: #000 !important;
+  background: transparent;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-family: "freight-sans-pro", sans-serif;
+}
+
+.infogain-col-1 .button::after {
+  content: '→';
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.infogain-col-1 .button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.infogain-col-1 .button:hover::after {
+  transform: translateX(4px);
+}
+
+/* Mobile Responsive */
+@media (width <= 768px) {
+  .infogain-col-1.columns-container {
+    padding: 2rem 1rem;
+  }
+  
+  .infogain-col-1 .columns-2-cols {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .infogain-col-1 h3 {
+    font-size: 2.5rem;
+  }
+  
+  .infogain-col-1 .card-block:first-child > div:first-child p {
+    font-size: 1.1rem;
+  }
+  
+  .infogain-col-1 .card-block:last-child > div {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 1rem;
+    max-width: none;
+  }
+}
