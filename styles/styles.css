@@ -1549,3 +1549,153 @@ main .section.section-title .default-content-wrapper:first-of-type p::after {
     font-size: 0.9rem;
   }
 }
+
+/* Infogain Cards Styles */
+.infogain-cards {
+  background: white;
+  padding: 4rem 0;
+}
+
+.infogain-cards .cards-wrapper {
+  margin: 0 auto;
+  padding: 10rem 2rem;
+}
+
+.infogain-cards .cards ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infogain-cards .cards li {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infogain-cards .cards li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.infogain-cards .cards-card-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.infogain-cards .cards-card-image picture {
+  width: 100%;
+  height: 100%;
+}
+
+.infogain-cards .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.infogain-cards .cards li:hover .cards-card-image img {
+  transform: scale(1.05);
+}
+
+.infogain-cards .cards-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 2rem 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infogain-cards .cards-card-body .button {
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  color: #1a1a1a;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "freight-sans-pro", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.infogain-cards .cards-card-body .button:hover {
+  background: #1a1a1a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.infogain-cards .cards-card-body .button::after {
+  content: '→';
+  margin-left: 8px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.infogain-cards .cards-card-body .button:hover::after {
+  transform: translateX(4px);
+}
+
+/* Responsive Design for Infogain Cards */
+@media (max-width: 1200px) {
+  .infogain-cards .cards ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .infogain-cards .cards ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .infogain-cards .cards-card-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .infogain-cards {
+    padding: 2rem 0;
+  }
+  
+  .infogain-cards .cards-wrapper {
+    padding: 0 1rem;
+  }
+  
+  .infogain-cards .cards ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .infogain-cards .cards-card-image {
+    height: 180px;
+  }
+  
+  .infogain-cards .cards-card-body {
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .infogain-cards .cards-card-body .button {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+}
