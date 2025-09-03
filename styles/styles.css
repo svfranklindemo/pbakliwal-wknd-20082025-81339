@@ -712,6 +712,16 @@ main .section.section-title .default-content-wrapper:first-of-type p::after {
   color: white;
 }
 
+/* Background Image 2 */
+.bg-image-2 {
+  background-image: url('/icons/imgi_33_home-ignis-bg.webp.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
 /* Infogain Column 1 Styles */
 .infogain-col-1.columns-container {
   min-height: 100vh;
